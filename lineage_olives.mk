@@ -15,12 +15,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from olives device
 $(call inherit-product, device/xiaomi/olives/device.mk)
 
+# Lineage Properties
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_USES_AOSP_RECOVERY := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := olives
 PRODUCT_NAME := lineage_olives
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 8 / 8A / 8A Dual
+PRODUCT_MODEL := Redmi 8
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 EXODUS_MAINTAINER := melles1991
